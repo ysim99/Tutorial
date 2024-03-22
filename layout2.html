@@ -1,9 +1,38 @@
 <!DOCTYPE html>
-<htm>
+<html>
   <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <link href="layout2.css" rel="stylesheet">
   </head>
-  <body></body>
-</htm>
+
+  <body>
+
+    <nav>
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Friends</a></li>
+        <li><a href="#">Accuont</a></li>
+        <li><a href="#">Setting</a></li>
+      </ul>
+    </nav>
+    
+    <div class="main-background"></div>
+    <h1 class = "title">Mountain</h1>
+    <div class="context"></div>
+
+    <button class="back"><a href="javascript:history.back()">Go back</a></button>
+
+    <script>
+      // JavaScript code here
+      fetch('mountain.txt')
+          .then(response => response.text())
+          .then(text => {
+              document.querySelector('.context').innerText = text;
+          })
+          .catch(error => console.error('Error loading the file:', error));
+    </script>
+
+    
+  </body>
+</html>
