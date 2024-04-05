@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link href="cart.css" rel="stylesheet">
+    <!-- font name: Syne-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class = "table-example">
+      <h1 class="table-name">Your Shopping cart</h1>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>ITEM</th>
+            <th>AMOUNT</th>
+            <th>PRICE</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img class="image" src="IMG/converse1.png"></td>
+            <td class="item"><span class="brand-name">Converse</span>2017 roadster-customizable color</td>
+            <td class="amount">2</td>
+            <td class="price">$54</td>
+            <td class="total">$108</td>
+          </tr>
+          <tr>
+            <td class="image"><img class="image" src="IMG/skyscraper.jpg"></td>
+            <td class="item"><span class="brand-name">NewYork</span>Trade center</td>
+            <td class="amount">1</td>
+            <td class="price">$7,000,000</td>
+            <td class="total">$7,000,000</td>
+          </tr>
+          <tr>
+            <td colspan="4"></td>
+            <td class="total-price"></td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="margin-top: 10px; display: flex; justify-content: space-between">
+      <a class="edit-link" href="">Edit your shopping cart</a>
+      <button class="payment">Choose payment button</button>
+      </div>
+    </div>
+
+    <script>
+      // Calculate the total price
+      window.onload = function() {
+        var total = 0;
+        var totalElements = document.querySelectorAll('.total');
+        for (var i = 0; i < totalElements.length; i++) {
+          total += parseFloat(totalElements[i].textContent.replace('$', '').replace(/,/g, ''));
+        }
+        document.querySelector('.total-price').textContent = '$' + total.toLocaleString();
+      };
+    </script>
+
+  </body>
+</html>
