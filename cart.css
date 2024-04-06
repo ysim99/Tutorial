@@ -59,7 +59,7 @@ table tr{
   font-weight: 700;
 }
 
-.edit-link, .edit-link:active{
+.edit-link, .edit-link:visited{
   color: rgb(38, 50, 54);
   text-decoration: underline;
 }
@@ -82,8 +82,4 @@ table tr{
 
 .payment:active{
   opacity: 0.7;
-}
-
-.link-box{
-  margin-top: 10px;
 }

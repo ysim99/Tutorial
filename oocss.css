@@ -1,0 +1,81 @@
+/* object-oriented CSS */
+.large-btn{
+  border:none;
+  border-radius: 4px;
+  width: 120px;
+  height: 50px;
+  padding: 4px;
+  font-size: 16px;
+}
+
+.mid-btn{
+  border:none;
+  border-radius: 4px;
+  width: 80px;
+  height: 40px;
+  padding: 4px;
+}
+.small-btn{
+  border:none;
+  border-radius: 4px;
+  width: 60px;
+  height: 30px;
+  padding: 4px;
+  font-size: 9px;
+}
+
+.bg-red{
+  color: white;
+  background: rgb(146, 0, 0);
+}
+
+.bg-blue{
+  color: white;
+  background: rgb(91, 91, 238);
+}
+
+.bg-black{
+  color: white;
+  background: black;
+}
+
+.f-small{
+  display: inline;
+  font-size: 12px;
+}
+
+.f-mid{
+  display: inline;
+  font-size: 16px;
+}
+
+.f-lg{
+  display: inline;
+  font-size: 20px;
+}
+
+.link,link:visited{
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.input-lg{
+  border: 1px solid rgb(188, 188, 188);
+  border-radius: 2px;
+  width: 500px;
+  height: 40px;
+}
+
+input:focus{
+  background-color: rgb(235, 214, 255);
+  border: 1px solid rgb(0, 0, 0)
+}
+
+.input-mid{
+
+}
+
+.input-small{
+
+}
