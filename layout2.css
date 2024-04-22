@@ -45,6 +45,21 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+.flex-container{
+  margin-top: 30px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  background-color: rgb(247, 110, 133);
+  color: white;
+  padding: 5px;
+}
+
+.flex-item{
+  font-size: 14px;
+  margin: 5px;
+}
+
 .main-background{
   width: 100%;
   height: 1000px;
@@ -52,7 +67,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  filter: brightness(70%);
+  filter: brightness(50%);
 }
 
 .title{

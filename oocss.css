@@ -1,4 +1,31 @@
 /* object-oriented CSS */
+
+@font-face {
+  font-family: 'Queensides';
+  src: url('Font/queensides-font/QueensidesLight.ttf') format('truetype'); /* Light font */
+  font-weight: 300; /* Define the font weight */
+}
+
+@font-face {
+  font-family: 'Queensides';
+  src: url('Font/queensides-font/QueensidesMedium.ttf') format('truetype'); /* Regular font */
+  font-weight: 400; /* Define the font weight */
+}
+
+@font-face {
+  font-family: 'Queensides';
+  src: url('Font/queensides-font/Queensides.ttf') format('truetype'); /* Bold font */
+  font-weight: 700; /* Define the font weight */
+}
+
+body{
+  font-family:'Syne';
+}
+
+p,h1,h2,h3,h4,span{
+  transform: rotate(0.03deg);
+}
+
 .large-btn{
   border:none;
   border-radius: 4px;
@@ -6,6 +33,7 @@
   height: 50px;
   padding: 4px;
   font-size: 16px;
+  font-family: 'Queensides';
 }
 
 .mid-btn{
@@ -14,6 +42,7 @@
   width: 80px;
   height: 40px;
   padding: 4px;
+  font-family: 'Queensides';
 }
 .small-btn{
   border:none;
@@ -22,6 +51,7 @@
   height: 30px;
   padding: 4px;
   font-size: 9px;
+  font-family: 'Queensides';
 }
 
 .bg-red{
@@ -65,17 +95,13 @@
   border-radius: 2px;
   width: 500px;
   height: 40px;
+  transition: 0.2s;
 }
 
-input:focus{
-  background-color: rgb(235, 214, 255);
-  border: 1px solid rgb(0, 0, 0)
-}
-
-.input-mid{
-
-}
-
-.input-small{
-
+.input-lg:focus{
+  color:white;
+  background-color: rgba(124, 124, 124, 0.7);
+  border: 2px solid;
+  border-color: rgb(77, 77, 77);
+  outline: white;
 }
